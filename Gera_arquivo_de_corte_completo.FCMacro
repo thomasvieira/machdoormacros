@@ -1,0 +1,6 @@
+filenames = ['C:/Users/thoma/OneDrive/Área de Trabalho/PostProcess/FaceSuperior.nc', 'C:/Users/thoma/OneDrive/Área de Trabalho/PostProcess/BordaDireita.nc', 'C:/Users/thoma/OneDrive/Área de Trabalho/PostProcess/BordaEsquerda.nc']
+with open('C:/Users/thoma/OneDrive/Área de Trabalho/PostProcess/saida.nc', 'w') as outfile:
+    for fname in filenames:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)

@@ -1,0 +1,54 @@
+{
+  "Fixtures": [
+    {
+      "G54": true
+    }
+  ],
+  "OrderOutputBy": "Fixture",
+  "Output": "C:/Users/thoma/OneDrive/\u00c1rea de Trabalho/PostProcess/BordaEsquerda.nc",
+  "Post": "mach_door_borda_esquerda",
+  "PostArgs": "",
+  "SplitOutput": false,
+  "Tolerance": "0.01",
+  "ToolController": [
+    {
+      "dir": "Forward",
+      "hfeed": "8.333333333333334 mm/s",
+      "hrapid": "0.0 mm/s",
+      "label": "5mm Endmill005",
+      "name": "_mm_Endmill004",
+      "nr": 1,
+      "speed": 18000.0,
+      "tool": {
+        "attribute": {},
+        "name": "5mm Endmill004",
+        "parameter": {
+          "Chipload": "0,00 mm",
+          "CuttingEdgeHeight": "30,00 mm",
+          "Diameter": "5,00 mm",
+          "Flutes": "0",
+          "Length": "50,00 mm",
+          "Material": "HSS",
+          "ShankDiameter": "3,00 mm",
+          "SpindleDirection": "Forward"
+        },
+        "shape": "endmill.fcstd",
+        "version": 2
+      },
+      "version": 1,
+      "vfeed": "8.333333333333334 mm/s",
+      "vrapid": "0.0 mm/s",
+      "xengine": [
+        {
+          "expr": "${SetupSheet}.HorizRapid",
+          "prop": "HorizRapid"
+        },
+        {
+          "expr": "${SetupSheet}.VertRapid",
+          "prop": "VertRapid"
+        }
+      ]
+    }
+  ],
+  "Version": 1
+}
