@@ -5,8 +5,8 @@
     }
   ],
   "OrderOutputBy": "Fixture",
-  "Output": "C:/Users/thoma/Documents/Saida/Borda Esquerda.nc",
-  "Post": "mach_door_borda_esquerda",
+  "Output": "C:/Users/thoma/Documents/Saida/Base.nc",
+  "Post": "mach_door_base",
   "PostArgs": "",
   "SetupSheet": {
     "ClearanceHeightExpression": "OpStockZMax+${SetupSheet}.ClearanceHeightOffset",
@@ -21,19 +21,19 @@
       "dir": "Forward",
       "hfeed": "116.66666666666667 mm/s",
       "hrapid": "0.0 mm/s",
-      "label": "T1 - 10mm 001",
-      "name": "_6mm_Endmill008",
+      "label": "T1 - 16mm002",
+      "name": "_6mm_Endmill012",
       "nr": 1,
       "speed": 18000.0,
       "tool": {
         "attribute": {},
-        "name": "10mm Endmill002",
+        "name": "16mm Endmill004",
         "parameter": {
           "Chipload": "0,00 mm",
           "CuttingEdgeHeight": "35,10 mm",
-          "Diameter": "10,00 mm",
+          "Diameter": "16,00 mm",
           "Flutes": "0",
-          "Length": "76,00 mm",
+          "Length": "35,10 mm",
           "Material": "HSS",
           "ShankDiameter": "3,00 mm",
           "SpindleDirection": "Forward"
@@ -46,11 +46,53 @@
       "vrapid": "0.0 mm/s",
       "xengine": [
         {
-          "expr": "SetupSheet001.HorizRapid",
+          "expr": "${SetupSheet}.HorizRapid",
           "prop": "HorizRapid"
         },
         {
-          "expr": "SetupSheet001.VertRapid",
+          "expr": "${SetupSheet}.VertRapid",
+          "prop": "VertRapid"
+        }
+      ]
+    },
+    {
+      "dir": "Forward",
+      "hfeed": "25.0 mm/s",
+      "hrapid": "0.0 mm/s",
+      "label": "T13 - 10mm006",
+      "name": "_6mm_Endmill014",
+      "nr": 13,
+      "speed": 18000.0,
+      "tool": {
+        "attribute": {},
+        "name": "10mm Endmill011",
+        "parameter": {
+          "Chipload": "0,00 mm",
+          "CuttingEdgeHeight": "39,00 mm",
+          "Diameter": "10,00 mm",
+          "Flutes": "0",
+          "Length": "39,00 mm",
+          "Material": "HSS",
+          "ShankDiameter": "0,00 mm",
+          "SpindleDirection": "Forward"
+        },
+        "shape": "endmill.fcstd",
+        "version": 2
+      },
+      "version": 1,
+      "vfeed": "50.0 mm/s",
+      "vrapid": "0.0 mm/s",
+      "xengine": [
+        {
+          "expr": "1500 mm / min",
+          "prop": "HorizFeed"
+        },
+        {
+          "expr": "${SetupSheet}.HorizRapid",
+          "prop": "HorizRapid"
+        },
+        {
+          "expr": "${SetupSheet}.VertRapid",
           "prop": "VertRapid"
         }
       ]
@@ -59,17 +101,17 @@
       "dir": "Forward",
       "hfeed": "50.0 mm/s",
       "hrapid": "0.0 mm/s",
-      "label": "T2 - 4mm002",
-      "name": "_mm_Endmill002",
+      "label": "T2 - 6mm004",
+      "name": "_mm_Endmill004",
       "nr": 2,
       "speed": 18000.0,
       "tool": {
         "attribute": {},
-        "name": "4mm Endmill002",
+        "name": "6mm Endmill004",
         "parameter": {
           "Chipload": "0,00 mm",
           "CuttingEdgeHeight": "31,00 mm",
-          "Diameter": "4,00 mm",
+          "Diameter": "6,00 mm",
           "Flutes": "0",
           "Length": "31,00 mm",
           "Material": "HSS",
@@ -84,26 +126,26 @@
       "vrapid": "0.0 mm/s",
       "xengine": [
         {
-          "expr": "SetupSheet001.HorizRapid",
+          "expr": "${SetupSheet}.HorizRapid",
           "prop": "HorizRapid"
         },
         {
-          "expr": "SetupSheet001.VertRapid",
+          "expr": "${SetupSheet}.VertRapid",
           "prop": "VertRapid"
         }
       ]
     },
     {
       "dir": "Forward",
-      "hfeed": "116.66666666666667 mm/s",
+      "hfeed": "50.0 mm/s",
       "hrapid": "0.0 mm/s",
-      "label": "T3 - 18mm003",
-      "name": "_6mm_Endmill009",
+      "label": "T3 - 18mm005",
+      "name": "_6mm_Endmill013",
       "nr": 3,
       "speed": 18000.0,
       "tool": {
         "attribute": {},
-        "name": "18mm Endmill008",
+        "name": "18mm Endmill010",
         "parameter": {
           "Chipload": "0,00 mm",
           "CuttingEdgeHeight": "100,00 mm",
@@ -122,11 +164,15 @@
       "vrapid": "0.0 mm/s",
       "xengine": [
         {
-          "expr": "SetupSheet.HorizRapid",
+          "expr": "3000 mm / min",
+          "prop": "HorizFeed"
+        },
+        {
+          "expr": "${SetupSheet}.HorizRapid",
           "prop": "HorizRapid"
         },
         {
-          "expr": "SetupSheet.VertRapid",
+          "expr": "${SetupSheet}.VertRapid",
           "prop": "VertRapid"
         }
       ]

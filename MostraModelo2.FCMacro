@@ -17,5 +17,13 @@ App.ActiveDocument.getObject("Job002").Visibility = False
 App.ActiveDocument.getObject("Operations002").Visibility = False
 App.ActiveDocument.getObject("Stock003").Visibility = False
 App.ActiveDocument.getObject("Model002").Visibility = False
+App.ActiveDocument.getObject("Job003").Visibility = False
+App.ActiveDocument.getObject("Operations003").Visibility = False
+App.ActiveDocument.getObject("Stock004").Visibility = False
+App.ActiveDocument.getObject("Model003").Visibility = False
+App.ActiveDocument.getObject("Job004").Visibility = False
+App.ActiveDocument.getObject("Operations004").Visibility = False
+App.ActiveDocument.getObject("Stock005").Visibility = False
+App.ActiveDocument.getObject("Model004").Visibility = False
 Gui.Selection.clearSelection()
 # Macro End: C:\Users\thoma\AppData\Roaming\FreeCAD\Macro\EscondeModelos.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
